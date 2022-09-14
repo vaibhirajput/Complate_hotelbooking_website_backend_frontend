@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <!-- header -->
+    <div id="header">
+      
+    </div>
+
+    <!-- login box -->
+    <div id="loginbox">
+       
+    </div>
+
+    <!-- sign up box -->
+    <div id="signup">
+     
+    </div>
+
+
+    <!-- content -->
+    <div id="detailcontent">
+        
+        <!-- slider and form -->
+        <div id="detailformbox">
+
+
+            <div id="detailboxslider">
+                
+                <span id="previous" class="arrow" onclick="slidercontrolpre()">
+                    < </span>
+                        <span id="next" class="arrow" onclick="slidercontrolnext()"> > </span> 
+                <div id="containerslider">
+                   <!-- slider images -->
+                </div>
+
+
+            </div>
+
+
+            <div id="detailboxform">
+
+                <div id="detailboxformdiv2">
+
+                    <form id="detailfrom" >
+
+                    <div class="formaitam">
+                        <label for="number">Adult :</label><input type="number" name="addult" id="persons">
+                    </div>
+
+                    <div class="formaitam">
+                        <label for="text">Name :</label><input type="text" name="name"  id="clientname" required>
+                    </div>
+
+                    <div class="formaitam">
+                        <label for="date">From :</label><input type="date" name="startdate" id="startdate" required>
+                    </div>
+
+                    <div class="formaitam">
+                        <label for="date">To date :</label><input onclick=" endingdate()" type="date" name="enddate" id="enddate" required>
+                    </div>
+
+                    <div class="formaitam">
+                        <label for="text">Total :</label><input type="text" id="totalprice">
+                    </div>
+
+                    </form> 
+
+                    <div class="formaitmbtn">
+                            <button  id="bookbtn2" onclick="date2()"  > Calculate Now</button>
+                            <button id="bookbtn" onclick="idforpaymentpage2()"   > Book Now</button>
+                    </div>
+                </div>
+
+            </div>
+                           
+        </div>
+        <!-- detail discrpion -->
+
+        <div id="discriptionbox">
+          <!-- discription -->
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+       
+    </div>
+
+    <!-- contact us  -->
+    <div id="contactusbox">
+        
+    </div>
+
+
+
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/detail.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    
+   
+</body>
+
+</html>

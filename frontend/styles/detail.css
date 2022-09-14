@@ -1,0 +1,507 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#detailcontent {
+  width: 100vw;
+  height: auto;
+}
+
+#detailformbox {
+  width: 90vw;
+  height: 70vh;
+  margin: 10% auto 2% auto;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* slider box css */
+#detailboxslider {
+  width: 60%;
+  height: 100%;
+  /* border: 10px solid rgb(160, 21, 21); */
+  border-right: 1px solid rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#containerslider {
+  width: 70%;
+  height: 90%;
+  overflow: hidden;
+  /* border: 2px solid; */
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* display: none; */
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+#next {
+  position: absolute;
+  right: 4%;
+  z-index: 55;
+}
+
+#previous {
+  position: absolute;
+  left: 4%;
+  z-index: 55;
+}
+
+.arrow {
+  font-size: 3rem;
+  color: rgb(161, 161, 161);
+  margin: 5%;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: rgb(87, 85, 85);
+}
+
+/* form box css*/
+#detailboxform {
+  width: 40%;
+  height: 100%;
+  /* border: 2px solid blueviolet; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#detailfrom{
+
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid rgb(0, 0, 0); */
+  overflow: hidden;
+}
+
+#detailboxformdiv2 {
+  width: 93%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid rgb(187, 21, 21); */
+  overflow: hidden;
+}
+.formaitmbtn{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 2px solid black; */
+  overflow: hidden;
+}
+
+.formaitam {
+  width: 80%;
+  height: 10%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.formaitam input {
+  width: 50%;
+  height: 65%;
+}
+
+#bookbtn {
+  width: 80px;
+  height: 35px;
+  color:  #451e3e;;
+  font-weight: bold;
+  border: 1px solid  #451e3e;;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+#bookbtn:hover {
+  color: white;
+  background-color:  #451e3e;;
+  overflow: hidden;
+}
+
+#bookbtn2 {
+  width: 80px;
+  height: 35px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border: 1px solid rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+#bookbtn2:hover {
+  color: white;
+  background-color: rgb(125, 125, 125);
+  overflow: hidden;
+}
+
+#discriptionbox {
+  width: 100vw;
+  height: auto;
+  margin-bottom: 8%;
+
+  /* border: 1px solid black; */
+}
+
+#hoteldiscription {
+  width: 90%;
+  height: auto;
+  margin-left: 3%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90%;
+  /* border: 2px solid black; */
+}
+
+#dott {
+  list-style: disc inside;
+  padding-left: 1%;
+  font-weight: bold;
+  
+}
+#dott li{
+padding: 0.5%;
+}
+#discrip{
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.checked {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+
+
+/* detail responsive css */
+@media screen and (max-width: 1100px) {
+  #containerslider {
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    border: 2px solid;
+    position: relative;
+  }
+
+  #next {
+    position: absolute;
+    right: 0%;
+    z-index: 999;
+    font-size: 4rem;
+  }
+
+  #previous {
+    position: absolute;
+    left: 0%;
+    z-index: 999;
+    font-size: 4rem;
+  }
+
+  .formaitam {
+    font-size: 1.3rem;
+  }
+
+  #bookbtn {
+    font-size: 1rem;
+  }
+  #bookbtn2 {
+    font-size: 0.9rem;
+  }
+
+  #hoteldiscription h1 {
+    font-size: 2.3rem;
+  }
+
+  #hoteldiscription p {
+    font-size: 1.2rem;
+  }
+
+  #hoteldiscription h2 {
+    font-size: 1.8rem;
+  }
+
+  #hoteldiscription h3 {
+    font-size: 1.6rem;
+  }
+
+  #hoteldiscription li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #containerslider {
+    width: 95%;
+    height: 90%;
+    overflow: hidden;
+    border: 2px solid;
+    position: relative;
+  }
+
+  #next {
+    position: absolute;
+    right: 0%;
+    z-index: 999;
+  }
+
+  #previous {
+    position: absolute;
+    left: 0%;
+    z-index: 999;
+  }
+
+  .formaitam input {
+    width: 50%;
+    height: 55%;
+  }
+
+  .formaitam {
+    font-size: 1.4rem;
+  }
+
+  #bookbtn {
+    font-size: 1rem;
+  }
+
+  #hoteldiscription h1 {
+    font-size: 2.3rem;
+  }
+
+  #hoteldiscription p {
+    font-size: 1.2rem;
+  }
+
+  #hoteldiscription h2 {
+    font-size: 1.8rem;
+  }
+
+  #hoteldiscription h3 {
+    font-size: 1.6rem;
+  }
+
+  #hoteldiscription li {
+    font-size: 1.2rem;
+  }
+
+  .formaitam {
+    width: 90%;
+    height: 10%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  #detailboxformdiv2 {
+    width: 93%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid rgb(73, 187, 21); */
+  }
+
+  #detailformbox {
+    margin-top: 15%;
+  }
+  #discriptionbox {
+    margin-bottom: 13%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  #containerslider {
+    width: 95%;
+    height: 90%;
+    overflow: hidden;
+    border: 2px solid;
+    position: relative;
+  }
+  #detailformbox {
+    margin: 15% auto 2% auto;
+    
+  }
+
+  #next {
+    position: absolute;
+    right: 0%;
+    z-index: 55;
+  }
+
+  #previous {
+    position: absolute;
+    left: 0%;
+    z-index: 55;
+  }
+
+  .formaitam input {
+    width: 50%;
+    height: 55%;
+  }
+
+  .formaitam {
+    width: 90%;
+    height: 10%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  .formaitam {
+    font-size: 1.5rem;
+  }
+
+  #bookbtn {
+    font-size: 1rem;
+  }
+
+  #hoteldiscription h1 {
+    font-size: 2.4rem;
+  }
+
+  #hoteldiscription p {
+    font-size: 1.3rem;
+  }
+
+  #hoteldiscription h2 {
+    font-size: 1.9rem;
+  }
+
+  #hoteldiscription h3 {
+    font-size: 1.7rem;
+  }
+
+  #hoteldiscription li {
+    font-size: 1.3rem;
+  }
+
+  #detailboxformdiv2 {
+    width: 93%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid rgb(73, 187, 21); */
+  }
+
+  #discriptionbox {
+    margin-bottom: 14%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #detailformbox {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin: 18% auto 2% auto;
+  }
+ 
+  #detailboxslider {
+    width: 100%;
+  }
+
+  #detailboxform {
+    width: 100%;
+    height: 100%;
+  }
+
+  .formaitam {
+    width: 90%;
+    height: 20%;
+  }
+
+  #detailboxformdiv2 {
+    width: 93%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid rgb(73, 187, 21); */
+  }
+
+  #bookbtn {
+    width: 60px;
+    height: 25px;
+    color: green;
+    font-weight: bold;
+    border: 1px solid green;
+    font-size: 0.7rem;
+    overflow: hidden;
+    margin-bottom: 8%;
+    margin-top: 6%;
+  }
+  #bookbtn2 {
+    width: 65px;
+    height: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 0.7rem;
+    overflow: hidden;
+    margin-bottom: 8%;
+    margin-top: 6%;
+  }
+
+  .formaitmbtn {
+    overflow: hidden;
+  }
+
+  .formaitam input {
+    width: 50%;
+    height: 50%;
+  }
+
+  #discriptionbox {
+    margin-bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 470px){
+
+  #detailformbox {
+    margin: 22% auto 2% auto;
+  }
+  #discriptionbox {
+    margin-bottom: 16%;
+  }
+
+}

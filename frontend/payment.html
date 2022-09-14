@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+
+
+    <!-- header -->
+    <div id="header">
+    
+    </div>
+
+    <!-- login box -->
+    <div id="loginbox">
+        
+    </div>
+
+    <!-- sign up box -->
+    <div id="signup">
+     
+    </div>
+
+
+    <!-- content -->
+
+    <div id="paymentcontent">
+        <div id="selecthoteldiv">
+            <img src="" alt="loading..">
+            <div id="hoteldetail">
+                <h1>...</h1>
+                <p>....</p>
+                <br>
+                <p>....</p>
+
+            </div> 
+
+        </div>
+
+        <div id="hotelpaymentdiv">
+
+            <div class="clientpayment1">
+                <p><span class="clinetdetial" id="paymentname">Name : <span class="clinetdetial" id='cname1' > </span></p>
+                <p><span class="clinetdetial">Number of Adult : <span class="noofadult clinetdetial"></span></p>
+                <p><span class="clinetdetial">Check-in date : <span class="clinetdetial" id="sdate" > </span></p>
+                <p><span class="clinetdetial">Check-outdate : <span class="clinetdetial" id="edate" > </span></p>
+
+            </div>
+            <div class="clientpayment2">
+                <p ><span class="clinetdetial">Tariff Berakdown : Rs 1000x </span> <span class="noofadult"> </span > <span class="clinetdetial">Adults x </span> <span id="ttdays"> </span> <span class="clinetdetial"> Nights </span> </p>
+                <p ><span class="clinetdetial">Total Amount : Rs</span>  <span id="gtotal" > 10000 </span> </p>
+
+            </div>
+
+
+            <div class="clientpayment3">
+                <button onclick="paynow()" id="paynowbtn">Pay Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+       
+    </div>
+
+    <!-- contact us  -->
+    <div id="contactusbox">
+       
+    </div>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/payment.js"></script>
+</body>
+
+</html>
